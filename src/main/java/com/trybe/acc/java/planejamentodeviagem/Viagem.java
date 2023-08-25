@@ -11,7 +11,7 @@ public class Viagem {
    * Método construtor da classe.
    * 
    */
-  public Viagem() {
+  public Viagem(String embarque, String origem, String destino, double distanciaKm) {
     /* Implemente sua solução aqui (você pode ter que alterar o construtor) */
   }
 
