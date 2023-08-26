@@ -39,7 +39,11 @@ public class Tempo {
     int indiceFusoHorarioOrigem = 0;
 
     for (int i = 0; i < fusosHorarios.length; i++) {
-      /* Implemente sua solução aqui */
+      if (fusosHorarios[i].split("/").length > 1 &&
+          fusosHorarios[i].split("/")[1].equals(origem)) {
+        indiceFusoHorarioOrigem = i;
+        break;
+      }
     }
 
     String fusoHorarioOrigem = fusosHorarios[indiceFusoHorarioOrigem];
@@ -51,7 +55,11 @@ public class Tempo {
     int indiceFusoHorarioDestino = 0;
 
     for (int i = 0; i < fusosHorarios.length; i++) {
-      /* Implemente sua solução aqui */
+      if (fusosHorarios[i].split("/").length > 1 &&
+          fusosHorarios[i].split("/")[1].equals(destino)) {
+        indiceFusoHorarioDestino = i;
+        break;
+      }
     }
 
     String fusoHorarioDestino = fusosHorarios[indiceFusoHorarioDestino];
@@ -72,7 +80,11 @@ public class Tempo {
     int indiceFusoHorarioOrigem = 0;
 
     for (int i = 0; i < fusosHorarios.length; i++) {
-      /* Implemente sua solução aqui */
+      if (fusosHorarios[i].split("/").length > 1 &&
+          fusosHorarios[i].split("/")[1].equals(origem)) {
+        indiceFusoHorarioOrigem = i;
+        break;
+      }
     }
 
     String fusoHorarioOrigem = fusosHorarios[indiceFusoHorarioOrigem];

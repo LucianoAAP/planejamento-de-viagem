@@ -10,8 +10,8 @@ public class Voo {
   public int retornarTempoVoo(double distanciaKm) {
 
     Double duracaoDouble = distanciaKm / 700.0;
-
-    /* Implemente sua solução aqui */
+    this.tempoVoo = (int) Math.round(duracaoDouble);
+    return tempoVoo;
   }
 
   /**
@@ -20,6 +20,8 @@ public class Voo {
    */
   public String retornarInformacaoVoo(String embarque, String origem, String desembarque,
       String destino) {
-    /* Implemente sua solução aqui */
+    String info = String.format("Embarque: %s, Origem: %s, Desembarque: %s, Destino: %s",
+        embarque, origem, desembarque, destino);
+    return info;
   }
 }

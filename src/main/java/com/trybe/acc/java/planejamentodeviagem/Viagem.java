@@ -12,7 +12,11 @@ public class Viagem {
    * 
    */
   public Viagem(String embarque, String origem, String destino, double distanciaKm) {
-    /* Implemente sua solução aqui (você pode ter que alterar o construtor) */
+    this.embarque = embarque;
+    this.origem = origem;
+    this.destino = destino;
+    this.distanciaKm = distanciaKm;
+    this.voo = new Voo();
   }
 
   /**
@@ -27,7 +31,7 @@ public class Viagem {
 
   // aqui consideramos que um aviao percorre em media 700 km a cada hora
   public int retornarDuracaoVoo() {
-      /* Implemente sua solução aqui */
+      return voo.retornarTempoVoo(distanciaKm);
   }
 
   /**
@@ -38,6 +42,10 @@ public class Viagem {
     Tempo tempoViagem =
         new Tempo(this.embarque, this.origem, this.destino, this.retornarDuracaoVoo());
 
-    /* Implemente sua solução aqui */
+    String info = String.format(
+        "Atenção: o desembarque em %s será: %s no horário de %s e %s no horário de %s",
+        destino, tempoViagem.retonarDesembarqueHorarioLocalDestino(), destino,
+        tempoViagem.retonarDesembarqueHorarioLocalOrigem(), origem);
+    return info;
   }
 }
