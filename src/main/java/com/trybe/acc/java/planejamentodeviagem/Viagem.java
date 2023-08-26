@@ -31,7 +31,7 @@ public class Viagem {
 
   // aqui consideramos que um aviao percorre em media 700 km a cada hora
   public int retornarDuracaoVoo() {
-      return voo.retornarTempoVoo(distanciaKm);
+    return voo.retornarTempoVoo(distanciaKm);
   }
 
   /**
